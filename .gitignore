@@ -1,0 +1,10 @@
+mock-deploy.sh
+.DS_Store
+# npm
+node_modules
+
+# dirs
+tmp
+
+# build
+dist

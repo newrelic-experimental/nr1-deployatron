@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+DEPLOYTYPE="$1"
+TITLE="$2"
+DESCRIPTION="$3"
+TIMESTAMP="$4"
+
+if [[ "$DEPLOYTYPE" != ""  &&  "$TITLE" != "" ]]; then
+        NOW=`date +%s`
+        NOWD=`date`
+        echo  "${NOWD}: Sending mock event: '${TYPE}' => '${DESCRIPTION}' "
+
+        curl -o /dev/null -w "%{http_code}" -k -H "Content-Type: application/json" \
+            -H "X-Insert-Key: API-KEY-HERE" \
+            -X POST https://insights-collector.newrelic.com/v1/accounts/ACCOUNT-ID-HERE/events \
+            --data "[{   \"timestamp\":${NOW}, \"eventType\":\"deployatronmk2\", \"type\":\"${DEPLOYTYPE}\", \"title\":\"${TITLE}\", \"description\":\"${DESCRIPTION}\", \"altTimestamp\":\"${TIMESTAMP}\"  }]"
+
+
+else
+    echo "Must supply type and title, optinally a description and an altTimestamp"
+fi 

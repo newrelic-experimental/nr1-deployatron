@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "name": "DeployaTronMk2",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "nr1 nerdpack:serve",
+        "test": "exit 0"
+    },
+    "dependencies": {
+        "@newrelic/nr1-community": "^1.2.0",
+        "axios": "^0.20.0",
+        "distinct-colors": "^3.0.0",
+        "prop-types": "^15.6.2",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "react-jsonschema-form": "^1.8.1",
+        "react-redux": "5.1.2",
+        "react-router-dom": "^5.2.0",
+        "react-select": "^3.1.0",
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "not ie < 11",
+        "not dead"
+    ]
+}

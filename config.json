@@ -1,0 +1,11 @@
+{
+    "configAccountId": 0,
+
+    
+    "dateFormat": "dd/MM/yyyy",
+    "eventStreamColumns": 4,
+    "defaultConfig": null,
+    "fixedConfig":  null,
+    "chartHeight": null,
+    "focusMinutes": null
+}

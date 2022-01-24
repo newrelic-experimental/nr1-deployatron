@@ -1,0 +1,7 @@
+{
+    "schemaType": "LAUNCHER",
+    "id": "nr1-deployatron",
+    "displayName": "Deployatron Mk2",
+    "description": "Deployatron",
+    "rootNerdletId": "nr1-deployatron-nerdlet"
+}

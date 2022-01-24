@@ -1,0 +1,100 @@
+@import '~@newrelic/nr1-community/dist/index.css';
+@import "../../components/Configurator/styles.scss";
+@import '../../styles/base';
+@import '../../styles/layout';
+@import '../../styles/variables';
+
+.configuratorContainer {
+  padding:2em;
+}
+.chartsGrid {
+    background-color: #fff;
+    padding:2em;
+}
+
+.outerGrid {
+    background-color: #fff;
+    padding:2em;
+}
+.accountPickerGrid {
+  background-color: #fff;
+  padding: 2em 2em 0 2em;
+}
+
+.dashboardLinksBlock {
+  align-items:baseline !important;
+}
+.dashboardLinksBlock A {
+  color: #0079bf;
+}
+.focusButtonContainer {
+  text-align: center;
+  margin-top: 2em;
+}
+.focusButton {
+  margin-right:1em;
+  margin-bottom: 1em;
+}
+
+.defocusButton {
+  margin: 1em 2em 0 0;
+  text-align:right;
+
+}
+
+.timeLineWidget {
+    padding:2em;
+}
+.timeline {
+    height: 80vh;
+    overflow: scroll;
+}
+  
+.selectAnAccountMessage {
+  color: #5b5b5b;
+  padding: 5em 0 0 5em;
+  font-style: italic;
+}
+
+.timeline-item-contents {
+    height: 300px;
+    overflow: scroll;
+  }
+  
+  .timeline-item-contents-item {
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #edeeee;
+    padding: 0 8px;
+  
+    .key {
+      margin-right: 8px;
+      font-weight: 600;
+      color: #464e4e;
+    }
+  
+    .value {
+      text-align: right;
+      color: #464e4e;
+      overflow-wrap: break-word;
+      word-break: break-all;
+      max-width: 80%;
+      padding: 8px 0;
+    }
+  
+    &:last-child {
+      border-bottom: none;
+    }
+  
+    &:hover {
+      background-color: #f4f5f5;
+      cursor: default;
+    }
+  } 
+
+  h3 {
+      margin-top: 1em;
+  }
+
