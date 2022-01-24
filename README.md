@@ -10,6 +10,7 @@ In order to use the app you must supply event sources. You can source events fro
 - Run `npm install` to install node dependencies
 - Edit the config.json and pop in your account ID
 - Check you have the correct New Relic CLI profile selected with `nr1 profiles:default`
+- Run `nr1 nerdpack:uuid -gf` to generate an application GUID
 - Run `nr1 nerdpack:serve` to serve the app locally
 
 Instructions on installing into your account permanently rather than running locally can be found in the [New Relic docs.](https://developer.newrelic.com/build-apps/publish-deploy/)
