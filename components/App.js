@@ -197,7 +197,7 @@ class App extends React.Component {
     let domain="one.eu.newrelic.com"
     let filterStringReplace=`"${filterString}\"`.replace(/\[NAME\]/g,entityName)
     let filter="&platform[filters]="+window.btoa(filterStringReplace)
-    let newWindow = `https://${domain}/launcher/nr1-core.explorer?platform[accountId]=${accountId}&platform[timeRange][begin_time]=${pickerStart}&platform[timeRange][end_time]=${pickerEnd}${filter}`
+    let newWindow = `https://${domain}/launcher/nr1-core.explorer?account=${accountId}&begin=${pickerStart}&end=${pickerEnd}${filter}`
     window.open(newWindow)
   }
 
@@ -360,7 +360,7 @@ class App extends React.Component {
                     if(!link.accountScope || (link.accountScope  && selectedAccount && link.accountScope.split(",").includes(selectedAccount.id+""))) {
 
                       if((!link.eventScope || link.eventScope=="") || link.eventScope.split(",").includes(event.type)) {
-                        let linkURL = link.url+`&platform[timeRange][begin_time]=${pickerStart}&platform[timeRange][end_time]=${pickerEnd}`
+                        let linkURL = link.url+`&begin=${pickerStart}&end=${pickerEnd}`
                         dashboardLinks.push(<>
                             <a onClick={(e)=>{e.stopPropagation();}}target="_blank" href={linkURL}>{link.caption}</a>
                             <br />
