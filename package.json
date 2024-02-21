@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "@newrelic/nr1-community": "^1.2.0",
-        "axios": "^0.20.0",
+        "axios": "^0.28.0",
         "distinct-colors": "^3.0.0",
         "prop-types": "^15.6.2",
         "react": "^16.6.3",
